@@ -14,6 +14,7 @@ header .logo {
   @include for-size(tablet-landscape) {
     margin-right: 15px;
     margin-top: 26px;
+  }
 
     @include for-size(desktop) {
       margin-right: 93px;
@@ -32,4 +33,4 @@ header .logo {
   .logo > span {
     color: $accent-color;
   }
-}
+

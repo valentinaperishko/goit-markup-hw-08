@@ -1,10 +1,6 @@
 .contact {
-  @include for-size(tablet-portrait) {
-    display: none;
-  }
-
-  @include for-size(desktop) {
-    display: flex;
+     display: none;
+    
     align-items: center;
     margin-left: auto;
 
@@ -40,7 +36,6 @@
       }
     }
   }
-}
 
 .tel-item-svg,
 .mail-item-svg {

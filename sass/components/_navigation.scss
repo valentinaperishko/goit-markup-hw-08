@@ -8,14 +8,8 @@
 }
 
 .site-nav {
-  @include for-size(tablet-portrait) {
-    display: none;
-  }
-
-  @include for-size(desktop) {
-    display: inline-flex;
-
-    & .item:not(:last-child) {
+  display: none;
+      & .item:not(:last-child) {
       margin-right: 50px;
     }
 
