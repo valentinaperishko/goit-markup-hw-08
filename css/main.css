@@ -33,17 +33,36 @@ ul {
 }
 
 header .logo {
-  margin-right: 93px;
   color: #212121;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-footer .logo {
+@media (min-width: 480px) {
+  header .logo {
+    margin-right: 15px;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .logo {
+    margin-right: 15px;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  header .logo {
+    margin-right: 93px;
+  }
+}
+
+header .logo footer .logo {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -53,7 +72,7 @@ footer .logo {
   text-decoration: none;
 }
 
-.logo > span {
+header .logo .logo > span {
   color: #2196f3;
 }
 
@@ -67,82 +86,88 @@ footer .logo {
   align-items: center;
 }
 
-.site-nav {
-  display: inline-flex;
+@media (min-width: 480px) {
+  .site-nav {
+    display: none;
+  }
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media (min-width: 1200px) {
+  .site-nav {
+    display: inline-flex;
+  }
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-nav .link {
+    display: block;
+    color: #212121;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav .link:hover, .site-nav .link:focus {
+    color: #2196f3;
+  }
+  .site-nav .link:hover.current, .site-nav .link:focus.current {
+    color: #2196f3;
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+  .site-nav .link:hover.current::after, .site-nav .link:focus.current::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    position: absolute;
+    top: 43px;
+  }
 }
 
-.site-nav .link {
-  display: block;
-  color: #212121;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media (min-width: 480px) {
+  .contact {
+    display: none;
+  }
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
-  color: #2196f3;
-}
-
-.site-nav .link:hover.current, .site-nav .link:focus.current {
-  color: #2196f3;
-  letter-spacing: 0.02em;
-  position: relative;
-}
-
-.site-nav .link:hover.current::after, .site-nav .link:focus.current::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  position: absolute;
-  top: 43px;
-}
-
-.contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contact .item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.contact .contact-item {
-  display: flex;
-  align-items: center;
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact .contact-item:hover, .contact .contact-item:focus {
-  color: #2196f3;
-}
-
-.contact .contact-item:hover .mail-item-svg,
-.contact .contact-item:hover .mail-item-svg, .contact .contact-item:focus .mail-item-svg,
-.contact .contact-item:focus .mail-item-svg {
-  fill: #2196f3;
-}
-
-.contact .contact-item:hover .tel-item-svg,
-.contact .contact-item:hover .tel-item-svg, .contact .contact-item:focus .tel-item-svg,
-.contact .contact-item:focus .tel-item-svg {
-  fill: #2196f3;
+@media (min-width: 1200px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contact .item:not(:first-child) {
+    margin-left: 50px;
+  }
+  .contact .contact-item {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact .contact-item:hover, .contact .contact-item:focus {
+    color: #2196f3;
+  }
+  .contact .contact-item:hover .mail-item-svg,
+  .contact .contact-item:hover .mail-item-svg, .contact .contact-item:focus .mail-item-svg,
+  .contact .contact-item:focus .mail-item-svg {
+    fill: #2196f3;
+  }
+  .contact .contact-item:hover .tel-item-svg,
+  .contact .contact-item:hover .tel-item-svg, .contact .contact-item:focus .tel-item-svg,
+  .contact .contact-item:focus .tel-item-svg {
+    fill: #2196f3;
+  }
 }
 
 .tel-item-svg,
@@ -153,9 +178,33 @@ footer .logo {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .button {

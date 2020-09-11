@@ -1,40 +1,42 @@
 .contact {
-@include for-size(tablet-portrait) {
-  display: none;
-}
-
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-
-  & .item:not(:first-child) {
-    margin-left: 50px;
+  @include for-size(tablet-portrait) {
+    display: none;
   }
-  & .contact-item {
+
+  @include for-size(desktop) {
     display: flex;
     align-items: center;
+    margin-left: auto;
 
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+    & .item:not(:first-child) {
+      margin-left: 50px;
+    }
+    & .contact-item {
+      display: flex;
+      align-items: center;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: $primary-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      & .mail-item-svg,
-      & .mail-item-svg {
-        fill: $accent-color;
-      }
+      &:hover,
+      &:focus {
+        color: $accent-color;
 
-      & .tel-item-svg,
-      & .tel-item-svg {
-        fill: $accent-color;
+        & .mail-item-svg,
+        & .mail-item-svg {
+          fill: $accent-color;
+        }
+
+        & .tel-item-svg,
+        & .tel-item-svg {
+          fill: $accent-color;
+        }
       }
     }
   }
