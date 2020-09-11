@@ -1,14 +1,12 @@
-.our-team {
-  display: flex;
-  flex-wrap: wrap;
-
-  & .item {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
+.team-mate-image {
+  width: 450px;
+  height: 460px;
 }
+
+.our-team .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .section .team-mate {
   margin-top: 0;
   margin-bottom: 10px;
@@ -37,3 +35,13 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
+// .our-team {
+//   // display: flex;
+//   // flex-wrap: wrap;
+
+//   // .item {
+//   //   width: 270px;
+//   //   &:not(:last-child) {
+//   //     margin-right: 30px;
+//   //   }
+//   }

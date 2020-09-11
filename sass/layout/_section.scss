@@ -1,6 +1,6 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   .section-title {
     margin-top: 0;
@@ -13,10 +13,13 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
-  &.feature {
-    padding-bottom: 0;
+  &.work {
+    display: none;
   }
   &.team {
     background-color: $background-color;
+  }
+  &.clients {
+    display: none;
   }
 }

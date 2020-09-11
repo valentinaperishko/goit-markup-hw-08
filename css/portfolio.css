@@ -42,20 +42,6 @@ header .logo {
   text-decoration: none;
 }
 
-@media (min-width: 480px) {
-  header .logo {
-    margin-right: 15px;
-    margin-top: 16px;
-  }
-}
-
-@media (min-width: 768px) {
-  header .logo {
-    margin-right: 15px;
-    margin-top: 26px;
-  }
-}
-
 @media (min-width: 1200px) {
   header .logo {
     margin-right: 93px;
@@ -179,7 +165,7 @@ footer .logo {
 
 @media (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -237,8 +223,8 @@ footer .logo {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section .section-title {
@@ -252,17 +238,20 @@ footer .logo {
   letter-spacing: 0.03em;
 }
 
-.section.feature {
-  padding-bottom: 0;
+.section.work {
+  display: none;
 }
 
 .section.team {
   background-color: #f5f4fa;
 }
 
+.section.clients {
+  display: none;
+}
+
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
 }
 

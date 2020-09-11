@@ -42,20 +42,6 @@ header .logo {
   text-decoration: none;
 }
 
-@media (min-width: 480px) {
-  header .logo {
-    margin-right: 15px;
-    margin-top: 16px;
-  }
-}
-
-@media (min-width: 768px) {
-  header .logo {
-    margin-right: 15px;
-    margin-top: 26px;
-  }
-}
-
 @media (min-width: 1200px) {
   header .logo {
     margin-right: 93px;
@@ -179,7 +165,7 @@ footer .logo {
 
 @media (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -443,8 +429,8 @@ footer .logo {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section .section-title {
@@ -458,38 +444,30 @@ footer .logo {
   letter-spacing: 0.03em;
 }
 
-.section.feature {
-  padding-bottom: 0;
+.section.work {
+  display: none;
 }
 
 .section.team {
   background-color: #f5f4fa;
 }
 
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+.section.clients {
+  display: none;
 }
 
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.page-header {
+  padding: 16px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1600px;
+  padding: 118px 60px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -497,37 +475,43 @@ footer .logo {
 }
 
 .hero-section {
-  max-width: 696px;
   text-align: center;
 }
 
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .feature-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  min-width: 450px;
 }
 
-.feature-list .item {
-  margin-right: 30px;
-  width: 270px;
-}
-
-.feature-list .item:last-child {
-  margin-right: 0;
+.feature-list .item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
+  min-width: 450px;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feature-list .text-feature {
-  margin-top: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -538,6 +522,7 @@ footer .logo {
   display: block;
   content: "";
   height: 120px;
+  min-width: 450px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-image: url("../images/feature1.svg");
@@ -549,6 +534,7 @@ footer .logo {
   display: block;
   content: "";
   height: 120px;
+  min-width: 450px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-image: url("../images/feature2.svg");
@@ -560,6 +546,7 @@ footer .logo {
   display: block;
   content: "";
   height: 120px;
+  min-width: 450px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-image: url("../images/feature3.svg");
@@ -571,6 +558,7 @@ footer .logo {
   display: block;
   content: "";
   height: 120px;
+  min-width: 450px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-image: url("../images/feature4.svg");
@@ -578,20 +566,9 @@ footer .logo {
   background-position: center;
 }
 
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .work-item {
-  width: 370px;
-  margin-right: 30px;
-  align-items: center;
-  position: relative;
-}
-
-.work-item:last-child {
-  margin-right: 0;
+  width: 450px;
+  height: 460px;
 }
 
 .work-box {
@@ -616,17 +593,13 @@ footer .logo {
   color: #ffffff;
 }
 
-.our-team {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.our-team .item {
-  width: 270px;
+.team-mate-image {
+  width: 450px;
+  height: 460px;
 }
 
 .our-team .item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .section .team-mate {

@@ -8,12 +8,10 @@ header .logo {
   text-decoration: none;
 
   @include for-size(tablet-portrait) {
-    margin-right: 15px;
-    margin-top: 16px;
+    
   }
   @include for-size(tablet-landscape) {
-    margin-right: 15px;
-    margin-top: 26px;
+    
   }
 
     @include for-size(desktop) {
