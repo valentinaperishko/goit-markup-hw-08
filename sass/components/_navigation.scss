@@ -2,13 +2,16 @@
   display: flex;
   align-items: center;
 }
-
 .navigation {
   display: flex;
   align-items: center;
 }
-
+  
 .site-nav {
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+  
   display: inline-flex;
 
   & .item:not(:last-child) {
