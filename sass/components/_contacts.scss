@@ -1,20 +1,21 @@
 .contact {
   display: none;
 
-  align-items: center;
-  margin-left: auto;
-
-  & .item:not(:first-child) {
-    margin-left: 50px;
-  }
-  & .contact-item {
+  @include for-size(tablet-landscape) {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 84px;
+  }
+}
 
+.contact-link-item {
+  @include for-size(tablet-landscape) {
     color: $primary-text-color;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
 
@@ -39,6 +40,16 @@
 
 .tel-item-svg,
 .mail-item-svg {
-  margin-right: 10px;
-  fill: $primary-text-color;
+  @include for-size(tablet-landscape) {
+    margin-right: 5px;
+    fill: $primary-text-color;
+  }
+}
+.mail-item-svg {
+  width: 14px;
+  height: 10px;
+}
+.tel-item-svg {
+  width: 10px;
+  height: 14px;
 }

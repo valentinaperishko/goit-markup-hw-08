@@ -2,13 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 118px 60px;
-  max-width: 480px;
+  max-width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
+
+  @include for-size(tablet-portrait) {
+    padding: 118px 60px;
+  }
+  @include for-size(tablet-landscape) {
+    padding: 200px 200px;
+  }
 }
 
 .hero-section {

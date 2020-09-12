@@ -12,14 +12,18 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @include for-size(tablet-portrait) {
+      margin-bottom: 30px;
+    }
+    @include for-size(tablet-landscape) {
+      margin-bottom: 30px;
+    }
   }
   &.work {
     display: none;
   }
   &.team {
     background-color: $background-color;
-  }
-  &.clients {
-    display: none;
   }
 }

@@ -4,21 +4,31 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @include for-size(tablet-portrait) {
-    min-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  .page-header & {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  @include for-size(tablet-landscape) {
-    width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+    @include for-size(tablet-landscape) {
+      display: flex;
+      align-items: center;
+    }
   }
+}
 
-  @include for-size(desktop) {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+@include for-size(tablet-portrait) {
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@include for-size(tablet-landscape) {
+  width: 768px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@include for-size(desktop) {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }

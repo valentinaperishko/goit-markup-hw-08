@@ -1,10 +1,29 @@
 .team-mate-image {
-  width: 450px;
-  height: 460px;
+  @include for-size(tablet-portrait) {
+    width: 450px;
+    height: 460px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 354px;
+    height: 374px;
+  }
 }
 
 .our-team .item:not(:last-child) {
-  margin-bottom: 30px;
+  @include for-size(tablet-portrait) {
+    margin-bottom: 30px;
+  }
+  @include for-size(tablet-landscape) {
+    margin-bottom: 0;
+  }
+}
+.our-team .item:not(:nth-last-child(-n + 2)) {
+  @include for-size(tablet-portrait) {
+    margin-bottom: 0;
+  }
+  @include for-size(tablet-landscape) {
+    margin-bottom: 30px;
+  }
 }
 
 .section .team-mate {
@@ -35,13 +54,17 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
-// .our-team {
-//   // display: flex;
-//   // flex-wrap: wrap;
 
-//   // .item {
-//   //   width: 270px;
-//   //   &:not(:last-child) {
-//   //     margin-right: 30px;
-//   //   }
-//   }
+.our-team {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  // .item {
+  //   width: 270px;
+  //   &:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+}

@@ -1,19 +1,33 @@
-.page-header .container {
-  display: flex;
-  align-items: center;
+.menu-button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
 }
+
 .navigation {
-  display: flex;
-  align-items: center;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
   display: none;
-  & .item:not(:last-child) {
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
+}
+.site-nav .item:not(:last-child) {
+  @include for-size(tablet-landscape) {
     margin-right: 50px;
   }
-
-  & .link {
+}
+.link {
+  @include for-size(tablet-landscape) {
     display: block;
 
     color: $title-text-color;

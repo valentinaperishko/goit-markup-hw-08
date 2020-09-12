@@ -7,28 +7,24 @@ header .logo {
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  @include for-size(tablet-portrait) {
-    
-  }
   @include for-size(tablet-landscape) {
-    
+    margin-right: 88px;
   }
 
-    @include for-size(desktop) {
-      margin-right: 93px;
-    }
+  @include for-size(desktop) {
+    margin-right: 93px;
   }
+}
 
-  footer .logo {
-    color: $primary-white-color;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-  }
-  .logo > span {
-    color: $accent-color;
-  }
-
+footer .logo {
+  color: $primary-white-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo > span {
+  color: $accent-color;
+}
