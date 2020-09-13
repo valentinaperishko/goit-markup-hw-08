@@ -27,11 +27,18 @@
 
   @include for-size(tablet-landscape) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
     margin-bottom: 50px;
   }
 
   .item:not(:nth-child(n + 4)) {
     margin-bottom: 10px;
+
+    @include for-size(tablet-landscape) {
+      margin-bottom: 0;
+    }
   }
   .item:not(:last-child) {
     margin-right: 5px;

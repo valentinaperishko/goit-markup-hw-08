@@ -8,7 +8,7 @@
   }
   .container {
     margin-bottom: 40px;
-    @include for-size(desktop) {
+    @include for-size(tablet-landscape) {
       margin-bottom: 0;
     }
   }
