@@ -13,6 +13,7 @@ header .logo {
 
   @include for-size(desktop) {
     margin-right: 93px;
+    font-size: 26px;
   }
 }
 
@@ -20,10 +21,14 @@ footer .logo {
   color: $primary-white-color;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @include for-size(desktop) {
+    font-size: 26px;
+  }
 }
 .logo > span {
   color: $accent-color;

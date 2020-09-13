@@ -1,12 +1,16 @@
 .footer {
   background-color: $footer-color;
+  @include for-size(tablet-landscape) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.footer.container {
+.container.footer-container {
   @include for-size(tablet-landscape) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 }
 
@@ -20,16 +24,38 @@
   margin: 0 auto;
 
   @include for-size(tablet-landscape) {
+    width: 232px;
+    padding: 0;
+    margin-right: 165px;
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
+  @include for-size(desktop) {
+    align-items: unset;
+    margin: 0;
+    margin-right: 70px;
+    max-width: 270px;
   }
 }
 
 .address-items {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 20px;
 
   color: $primary-white-color;
   font-style: normal;
+
+  @include for-size(tablet-portrait) {
+    text-align: center;
+  }
+  @include for-size(tablet-landscape) {
+    text-align: center;
+  }
+  @include for-size(desktop) {
+    text-align: unset;
+  }
 }
 
 .address-link {
@@ -43,6 +69,11 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   text-decoration: none;
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &:last-child {
     margin-top: 0;
@@ -59,6 +90,19 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 60px;
+
+  @include for-size(tablet-landscape) {
+    width: 206px;
+    margin: 0;
+  }
+  @include for-size(desktop) {
+    align-items: unset;
+    margin-bottom: 0;
+    margin-right: 90px;
+    padding: 0;
+    padding-right: 30px;
+    max-width: 270px;
+  }
 }
 
 b {
@@ -111,12 +155,21 @@ b {
 
   @include for-size(tablet-landscape) {
   }
+  @include for-size(desktop) {
+    align-items: unset;
+    margin: 0;
+    width: 570px;
+  }
 }
 
 .input-form {
   display: flex;
   align-items: center;
   flex-direction: column;
+  @include for-size(desktop) {
+    align-items: unset;
+    flex-direction: unset;
+  }
 }
 
 .contact-input {

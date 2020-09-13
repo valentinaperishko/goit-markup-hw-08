@@ -1,17 +1,17 @@
-// .work-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .work-item {
-  width: 450px;
-  height: 460px;
-  // margin-right: 30px;
-  // align-items: center;
+  width: 370px;
+  margin-right: 30px;
+  align-items: center;
 
-  // position: relative;
+  position: relative;
 
-  // &:last-child {
-  //   margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .work-box {

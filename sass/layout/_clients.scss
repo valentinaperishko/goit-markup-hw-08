@@ -17,6 +17,9 @@
   @include for-size(tablet-landscape) {
     width: 226px;
   }
+  @include for-size(desktop) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
@@ -44,10 +47,22 @@
   @include for-size(tablet-landscape) {
     margin-right: 30px;
   }
+  @include for-size(desktop) {
+    margin-right: 0;
+  }
 }
 .client-list-item:not(:nth-last-child(-n + 3)) {
   @include for-size(tablet-landscape) {
     margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.client-list-item:not(:last-child) {
+  @include for-size(desktop) {
+    margin-right: 30px;
   }
 }
 .client-item-svg {

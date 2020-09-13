@@ -7,6 +7,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  @include for-size(desktop) {
+    justify-content: none;
+  }
+
+  .item {
+    @include for-size(desktop) {
+      margin-right: 30px;
+      width: 270px;
+      &:last-child {
+        @include for-size(desktop) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 
   .item:not(:first-child) {
     margin-top: 30px;
@@ -35,6 +50,9 @@
     width: 354px;
     text-align: start;
   }
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .text-feature {
@@ -49,6 +67,9 @@
 
   @include for-size(tablet-landscape) {
     width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
   }
 }
 
@@ -70,6 +91,9 @@
   @include for-size(tablet-landscape) {
     width: 354px;
   }
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .feature-list .item.punctuality::before {
@@ -89,6 +113,9 @@
 
   @include for-size(tablet-landscape) {
     width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
   }
 }
 
@@ -110,6 +137,9 @@
   @include for-size(tablet-landscape) {
     width: 354px;
   }
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .feature-list .item.modern::before {
@@ -129,5 +159,8 @@
 
   @include for-size(tablet-landscape) {
     width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
   }
 }

@@ -7,6 +7,10 @@
     width: 354px;
     height: 374px;
   }
+  @include for-size(desktop) {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .our-team .item:not(:last-child) {
@@ -16,13 +20,16 @@
   @include for-size(tablet-landscape) {
     margin-bottom: 0;
   }
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 .our-team .item:not(:nth-last-child(-n + 2)) {
-  @include for-size(tablet-portrait) {
-    margin-bottom: 0;
-  }
   @include for-size(tablet-landscape) {
     margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -61,10 +68,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  // .item {
-  //   width: 270px;
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
+  @include for-size(desktop) {
+    justify-content: unset;
+  }
 }

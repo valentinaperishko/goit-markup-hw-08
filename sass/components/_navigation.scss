@@ -6,6 +6,9 @@
   @include for-size(tablet-landscape) {
     display: none;
   }
+  @include for-size(desktop) {
+    display: none;
+  }
 }
 
 .navigation {
@@ -18,7 +21,7 @@
 .site-nav {
   display: none;
   @include for-size(tablet-landscape) {
-    display: flex;
+    display: inline-flex;
   }
 }
 .site-nav .item:not(:last-child) {
@@ -57,7 +60,13 @@
           height: 4px;
           background-color: $accent-color;
           position: absolute;
-          top: 43px;
+
+          @include for-size(tablet-landscape) {
+            top: 37px;
+          }
+          @include for-size(desktop) {
+            top: 43px;
+          }
         }
       }
     }

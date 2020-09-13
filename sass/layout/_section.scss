@@ -2,6 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @include for-size(desktop) {
+    padding: 94px 0;
+  }
+
   .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -19,9 +23,16 @@
     @include for-size(tablet-landscape) {
       margin-bottom: 30px;
     }
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+    }
   }
   &.work {
     display: none;
+
+    @include for-size(desktop) {
+      display: block;
+    }
   }
   &.team {
     background-color: $background-color;
