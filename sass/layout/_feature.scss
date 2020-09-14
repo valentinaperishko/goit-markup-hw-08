@@ -1,17 +1,21 @@
 .feature-list {
   @include for-size(tablet-landscape) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-  }
-  @include for-size(desktop) {
-    justify-content: none;
   }
 
   .item {
+    width: 100%;
+    @include for-size(tablet-landscape) {
+      width: calc((100% - 30px) / 2);
+    }
+    @include for-size(desktop) {
+      width: calc((100% - 30px * 3) / 4);
+    }
+
     @include for-size(desktop) {
       margin-right: 30px;
-      width: 270px;
+
       &:last-child {
         @include for-size(desktop) {
           margin-right: 0;
@@ -39,16 +43,11 @@
   text-transform: uppercase;
 
   @include for-size(tablet-portrait) {
-    width: 450px;
     text-align: center;
   }
 
   @include for-size(tablet-landscape) {
-    width: 354px;
     text-align: start;
-  }
-  @include for-size(desktop) {
-    width: 270px;
   }
 }
 
@@ -57,109 +56,29 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
-  @include for-size(tablet-portrait) {
-    width: 450px;
-  }
-
-  @include for-size(tablet-landscape) {
-    width: 354px;
-  }
-  @include for-size(desktop) {
-    width: 270px;
-  }
+}
+.feature-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  background-position: center;
 }
 
 .feature-list .item.detail::before {
-  display: block;
-  content: "";
-  height: auto;
-  width: 100%;
-  max-width: 450px;
-  margin-bottom: 30px;
-  margin-right: 0;
-  background-repeat: no-repeat;
   background-image: url("../images/feature1.svg");
-  background-color: #f5f4fa;
-  background-position: center;
-
-  @include for-size(tablet-portrait) {
-    max-width: 450px;
-  }
-
-  @include for-size(tablet-landscape) {
-    max-width: 354px;
-  }
-  @include for-size(desktop) {
-    max-width: 270px;
-  }
 }
 
 .feature-list .item.punctuality::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  margin-right: 0;
-  background-repeat: no-repeat;
   background-image: url("../images/feature2.svg");
-  background-color: #f5f4fa;
-  background-position: center;
-
-  @include for-size(tablet-portrait) {
-    width: 450px;
-  }
-
-  @include for-size(tablet-landscape) {
-    width: 354px;
-  }
-  @include for-size(desktop) {
-    width: 270px;
-  }
 }
 
 .feature-list .item.planning::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  margin-right: 0;
-  background-repeat: no-repeat;
   background-image: url("../images/feature3.svg");
-  background-color: #f5f4fa;
-  background-position: center;
-
-  @include for-size(tablet-portrait) {
-    width: 450px;
-  }
-
-  @include for-size(tablet-landscape) {
-    width: 354px;
-  }
-  @include for-size(desktop) {
-    width: 270px;
-  }
 }
 
 .feature-list .item.modern::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  margin-right: 0;
-  background-repeat: no-repeat;
   background-image: url("../images/feature4.svg");
-  background-color: #f5f4fa;
-  background-position: center;
-
-  @include for-size(tablet-portrait) {
-    width: 450px;
-  }
-
-  @include for-size(tablet-landscape) {
-    width: 354px;
-  }
-  @include for-size(desktop) {
-    width: 270px;
-  }
 }

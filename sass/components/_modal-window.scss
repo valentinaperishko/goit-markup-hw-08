@@ -31,11 +31,11 @@
   @include for-size(desktop) {
     max-width: 528px;
   }
-}
 
-.backdrop.is-hidden & {
-  transform: translateX(-50%) scale(0);
-  transition: transform 500ms linear 0s;
+  .backdrop.is-hidden & {
+    transform: translateX(-50%) scale(0);
+    transition: transform 500ms linear 0s;
+  }
 }
 
 .button-modal {

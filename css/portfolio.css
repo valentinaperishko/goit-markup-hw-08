@@ -27,6 +27,7 @@ img {
 *::after {
   margin: 0;
   padding: 0;
+  outline: 2px solid red;
 }
 
 ul {
@@ -302,30 +303,23 @@ footer .logo {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid #000;
 }
 
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
