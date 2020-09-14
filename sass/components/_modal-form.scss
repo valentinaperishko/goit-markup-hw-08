@@ -1,11 +1,16 @@
 .modal-form > p {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
+
+  @include for-size(desktop) {
+    line-height: 1.15;
+  }
 }
+
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -86,14 +91,14 @@
     border: 2px solid $title-text-color;
     background-color: $primary-white-color;
     margin-right: 6px;
+  }
 
-    .modal-form-check:checked + & {
-      background-color: $accent-color;
-      background-image: url("../images/check.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      border: none;
-    }
+  .modal-form-check:checked + & {
+    background-color: $accent-color;
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
   }
 }
 
@@ -101,17 +106,27 @@
   margin-left: 5px;
   color: $accent-color;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-span {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-field {

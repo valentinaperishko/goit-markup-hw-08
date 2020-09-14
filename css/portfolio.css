@@ -77,8 +77,6 @@ footer .logo {
 .menu-button {
   background-color: transparent;
   border: none;
-  width: 40px;
-  height: 40px;
 }
 
 @media (min-width: 768px) {
@@ -93,6 +91,37 @@ footer .logo {
   }
 }
 
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .page-header .container {
+    justify-content: center;
+  }
+}
+
+.close-menu-icon {
+  display: none;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 60px 140px;
+  width: 480px;
+  height: 453px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.navigation {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .navigation {
     display: flex;
@@ -101,7 +130,7 @@ footer .logo {
 }
 
 .site-nav {
-  display: none;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -114,6 +143,10 @@ footer .logo {
   .site-nav .item:not(:last-child) {
     margin-right: 50px;
   }
+}
+
+.link {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -294,18 +327,6 @@ footer .logo {
   }
 }
 
-.page-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .page-header .container {
-    justify-content: center;
-  }
-}
-
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -441,6 +462,7 @@ footer .logo {
 }
 
 .page-header {
+  position: relative;
   padding: 16px 0;
   border-bottom: 1px solid #ececec;
 }

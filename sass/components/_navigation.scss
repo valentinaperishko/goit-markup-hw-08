@@ -1,8 +1,7 @@
 .menu-button {
   background-color: transparent;
   border: none;
-  width: 40px;
-  height: 40px;
+
   @include for-size(tablet-landscape) {
     display: none;
   }
@@ -11,7 +10,34 @@
   }
 }
 
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include for-size(tablet-landscape) {
+    justify-content: center;
+  }
+}
+
+.close-menu-icon {
+  display: none;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 60px 140px;
+  width: 480px;
+  height: 453px;
+  background-color: $primary-white-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
 .navigation {
+  display: block;
+
   @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
@@ -19,7 +45,8 @@
 }
 
 .site-nav {
-  display: none;
+  display: block;
+
   @include for-size(tablet-landscape) {
     display: inline-flex;
   }
@@ -30,6 +57,8 @@
   }
 }
 .link {
+  display: block;
+
   @include for-size(tablet-landscape) {
     display: block;
 
