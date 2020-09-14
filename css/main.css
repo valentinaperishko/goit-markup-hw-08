@@ -27,7 +27,6 @@ img {
 *::after {
   margin: 0;
   padding: 0;
-  outline: 2px solid red;
 }
 
 ul {
@@ -758,6 +757,15 @@ footer .logo {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list .item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .feature-list .item:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -880,7 +888,7 @@ footer .logo {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .our-team .item:not(:nth-last-child(-n + 2)) {
+  .our-team .item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
   .our-team .item:not(:nth-child(even)) {
