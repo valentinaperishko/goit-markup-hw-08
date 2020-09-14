@@ -15,15 +15,16 @@
 }
 
 .address {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
+  text-align: center;
 
   @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 232px;
     padding: 0;
     margin-right: 165px;
@@ -46,6 +47,7 @@
 
   color: $primary-white-color;
   font-style: normal;
+  text-align: center;
 
   @include for-size(tablet-portrait) {
     text-align: center;
@@ -85,13 +87,14 @@
 }
 
 .join {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin-bottom: 60px;
+  text-align: center;
 
   @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 206px;
     margin: 0;
   }
@@ -147,13 +150,14 @@ b {
 }
 
 .sign {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin: 0 auto;
+  text-align: center;
 
   @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   @include for-size(desktop) {
     align-items: unset;

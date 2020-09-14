@@ -628,17 +628,18 @@ footer .logo {
 }
 
 .address {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 232px;
     padding: 0;
     margin-right: 165px;
@@ -663,6 +664,7 @@ footer .logo {
   margin-top: 20px;
   color: #ffffff;
   font-style: normal;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
@@ -711,15 +713,16 @@ footer .logo {
 }
 
 .join {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .join {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 206px;
     margin: 0;
   }
@@ -776,11 +779,17 @@ b {
 }
 
 .sign {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sign {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1200px) {
