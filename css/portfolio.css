@@ -751,6 +751,7 @@ b {
 
 .footer-social {
   display: flex;
+  justify-content: center;
 }
 
 .footer-social-link .footer-item {
