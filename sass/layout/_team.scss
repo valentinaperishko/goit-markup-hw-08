@@ -1,4 +1,7 @@
 .team-mate-image {
+  height: auto;
+  width: 100%;
+
   @include for-size(tablet-portrait) {
     width: 450px;
     height: 460px;
@@ -14,6 +17,7 @@
 }
 
 .our-team .item:not(:last-child) {
+  margin-bottom: 30px;
   @include for-size(tablet-portrait) {
     margin-bottom: 30px;
   }

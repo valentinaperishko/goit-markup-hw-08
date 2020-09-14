@@ -1,7 +1,4 @@
 .feature-list {
-  display: block;
-  min-width: 450px;
-
   @include for-size(tablet-landscape) {
     display: flex;
     justify-content: space-between;
@@ -76,7 +73,8 @@
 .feature-list .item.detail::before {
   display: block;
   content: "";
-  height: 120px;
+  height: auto;
+  width: 100%;
   margin-bottom: 30px;
   margin-right: 0;
   background-repeat: no-repeat;
@@ -85,14 +83,14 @@
   background-position: center;
 
   @include for-size(tablet-portrait) {
-    width: 450px;
+    max-width: 450px;
   }
 
   @include for-size(tablet-landscape) {
-    width: 354px;
+    max-width: 354px;
   }
   @include for-size(desktop) {
-    width: 270px;
+    max-width: 270px;
   }
 }
 
