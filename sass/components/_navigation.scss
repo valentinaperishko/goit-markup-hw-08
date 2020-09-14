@@ -21,6 +21,7 @@
 }
 
 .header-menu {
+  display: none;
   position: absolute;
   top: 77px;
   right: 0;
@@ -36,8 +37,6 @@
 }
 
 .navigation {
-  margin-bottom: 60px;
-
   @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
@@ -45,6 +44,8 @@
 }
 
 .site-nav {
+  margin-bottom: 60px;
+
   @include for-size(tablet-landscape) {
     display: inline-flex;
   }
