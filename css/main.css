@@ -755,7 +755,7 @@ footer .logo {
 @media (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    padding: 0;
+    padding: 200px 0;
   }
 }
 
