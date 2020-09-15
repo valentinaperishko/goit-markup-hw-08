@@ -80,10 +80,6 @@ footer .logo {
   background-color: transparent;
   border: none;
   position: relative;
-}
-
-.menu-button:hover, .menu-button:focus {
-  fill: #2196f3;
   outline: none;
 }
 
@@ -107,6 +103,14 @@ footer .logo {
   }
   .close-menu-icon {
     display: none;
+  }
+  .close-menu-icon:hover, .close-menu-icon:focus {
+    fill: #2196f3;
+    outline: none;
+  }
+  .open-menu-icon:hover, .open-menu-icon:focus {
+    fill: #2196f3;
+    outline: none;
   }
   .menu-button.is-open .open-menu-icon {
     display: none;
@@ -198,7 +202,7 @@ footer .logo {
 
 @media (min-width: 768px) {
   .link {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.14;
   }
 }
@@ -225,7 +229,7 @@ footer .logo {
 
 @media (min-width: 768px) {
   .link.current::after {
-    top: 37px;
+    top: 43px;
   }
 }
 
@@ -241,7 +245,7 @@ footer .logo {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 50px;
+    margin-left: 84px;
   }
 }
 
@@ -249,6 +253,7 @@ footer .logo {
   .contact {
     flex-direction: row;
     align-items: center;
+    margin-left: 305px;
   }
 }
 

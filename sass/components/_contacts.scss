@@ -4,11 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 50px;
+    margin-left: 84px;
   }
   @include for-size(desktop) {
     flex-direction: row;
     align-items: center;
+    margin-left: 305px;
   }
 }
 

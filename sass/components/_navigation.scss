@@ -2,12 +2,7 @@
   background-color: transparent;
   border: none;
   position: relative;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-    outline: none;
-  }
+  outline: none;
 
   @include for-size(tablet-landscape) {
     display: none;
@@ -26,6 +21,19 @@
 
   .close-menu-icon {
     display: none;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      outline: none;
+    }
+  }
+
+  .open-menu-icon {
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      outline: none;
+    }
   }
 
   .menu-button.is-open .open-menu-icon {
@@ -118,7 +126,7 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include for-size(tablet-landscape) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.14;
   }
 
@@ -145,7 +153,7 @@
   left: 0;
 
   @include for-size(tablet-landscape) {
-    top: 37px;
+    top: 43px;
   }
   @include for-size(desktop) {
     top: 43px;
