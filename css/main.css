@@ -211,7 +211,6 @@ footer .logo {
   height: 4px;
   background-color: #2196f3;
   position: absolute;
-  left: 50%;
 }
 
 @media (min-width: 768px) {
