@@ -109,7 +109,6 @@
 }
 
 b {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -121,6 +120,7 @@ b {
 .footer-social {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .footer-social-link .footer-item {
@@ -171,6 +171,7 @@ b {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
   @include for-size(desktop) {
     align-items: unset;
     flex-direction: unset;
