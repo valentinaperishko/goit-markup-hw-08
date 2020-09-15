@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 84px;
+    margin-left: 50px;
   }
   @include for-size(desktop) {
     flex-direction: row;
@@ -23,6 +23,10 @@
 
 .contact-item:not(:last-child) {
   margin-bottom: 16px;
+
+  @include for-size(tablet-landscape) {
+    margin-bottom: 10px;
+  }
   @include for-size(desktop) {
     margin-bottom: 0;
   }
