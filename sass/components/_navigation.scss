@@ -32,6 +32,15 @@
   display: block;
 }
 
+.open-menu-icon,
+.close-menu-icon {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    outline: none;
+  }
+}
+
 .header-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -67,6 +76,7 @@
 
   @include for-size(tablet-landscape) {
     display: inline-flex;
+    margin-bottom: 0;
   }
 }
 
@@ -117,7 +127,7 @@
         height: 4px;
         background-color: $accent-color;
         position: absolute;
-        top: 50px;
+        left: 50%;
 
         @include for-size(tablet-landscape) {
           top: 37px;

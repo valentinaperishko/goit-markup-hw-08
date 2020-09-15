@@ -115,6 +115,13 @@ footer .logo {
   display: block;
 }
 
+.open-menu-icon:hover, .open-menu-icon:focus,
+.close-menu-icon:hover,
+.close-menu-icon:focus {
+  fill: #2196f3;
+  outline: none;
+}
+
 .header-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -151,6 +158,7 @@ footer .logo {
 @media (min-width: 768px) {
   .site-nav {
     display: inline-flex;
+    margin-bottom: 0;
   }
 }
 
@@ -204,7 +212,7 @@ footer .logo {
   height: 4px;
   background-color: #2196f3;
   position: absolute;
-  top: 50px;
+  left: 50%;
 }
 
 @media (min-width: 768px) {
