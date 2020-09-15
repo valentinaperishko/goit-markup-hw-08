@@ -1146,7 +1146,7 @@ footer .logo {
 
 @media (min-width: 1200px) {
   .address {
-    align-items: unset;
+    align-items: flex-start;
     margin: 0;
     margin-right: 70px;
     max-width: 270px;
@@ -1177,7 +1177,7 @@ footer .logo {
 
 @media (min-width: 1200px) {
   .address-items {
-    text-align: unset;
+    text-align: start;
   }
 }
 
