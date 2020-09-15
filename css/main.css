@@ -553,6 +553,7 @@ footer .logo {
   border: 2px solid #212121;
   background-color: #ffffff;
   margin-right: 6px;
+  flex: 0 0 auto;
 }
 
 .modal-form-check:checked + .label-form-modal-check::before {
