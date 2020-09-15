@@ -125,7 +125,8 @@ footer .logo {
     position: absolute;
     top: 77px;
     right: 0;
-    padding: 60px 140px;
+    padding: 60px 0px;
+    width: 100%;
     max-width: 480px;
     height: auto;
     background-color: #ffffff;

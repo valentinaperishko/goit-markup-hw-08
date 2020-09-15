@@ -125,7 +125,8 @@ footer .logo {
     position: absolute;
     top: 77px;
     right: 0;
-    padding: 60px 140px;
+    padding: 60px 0px;
+    width: 100%;
     max-width: 480px;
     height: auto;
     background-color: #ffffff;
@@ -542,7 +543,7 @@ footer .logo {
   margin-right: 6px;
 }
 
-.modal-form-check:checked + .label-form-modal-check {
+.modal-form-check:checked + .label-form-modal-check::before {
   background-color: #2196f3;
   background-image: url("../images/check.svg");
   background-repeat: no-repeat;
@@ -611,9 +612,9 @@ footer .logo {
 .modal {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 100px;
   padding: 40px 40px;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0%) scale(1);
   max-width: 450px;
   width: 100%;
   background: #ffffff;
