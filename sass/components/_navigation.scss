@@ -69,7 +69,7 @@
 }
 
 .header-menu {
-  @include for-size(desktop) {
+  @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
     justify-content: center;
