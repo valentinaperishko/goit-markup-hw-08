@@ -99,7 +99,7 @@
     margin: 0;
   }
   @include for-size(desktop) {
-    align-items: unset;
+    align-items: flex-start;
     margin-bottom: 0;
     margin-right: 90px;
     padding: 0;
@@ -161,7 +161,7 @@ b {
     flex-wrap: wrap;
   }
   @include for-size(desktop) {
-    align-items: unset;
+    align-items: flex-start;
     margin: 0;
     width: 570px;
   }
@@ -186,6 +186,10 @@ b {
   border-radius: 4px;
   background-color: transparent;
   color: $primary-white-color;
+
+  @include for-size(desktop) {
+    width: 358px;
+  }
 
   &:focus {
     outline: none;

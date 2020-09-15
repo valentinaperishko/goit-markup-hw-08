@@ -101,46 +101,40 @@ footer .logo {
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.close-menu-icon {
-  display: none;
-}
-
-.menu-button.is-open .open-menu-icon {
-  display: none;
-}
-
-.menu-button.is-open .close-menu-icon {
-  display: block;
-}
-
-.open-menu-icon:hover, .open-menu-icon:focus,
-.close-menu-icon:hover,
-.close-menu-icon:focus {
-  fill: #2196f3;
-  outline: none;
-}
-
-.header-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: unset;
-}
-
-.header-menu {
-  position: absolute;
-  top: 77px;
-  right: 0;
-  padding: 60px 140px;
-  max-width: 480px;
-  height: auto;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 500ms linear;
+  .close-menu-icon {
+    display: none;
+  }
+  .menu-button.is-open .open-menu-icon {
+    display: none;
+  }
+  .menu-button.is-open .close-menu-icon {
+    display: block;
+  }
+  .open-menu-icon:hover, .open-menu-icon:focus,
+  .close-menu-icon:hover,
+  .close-menu-icon:focus {
+    fill: #2196f3;
+    outline: none;
+  }
+  .header-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: unset;
+  }
+  .header-menu {
+    position: absolute;
+    top: 77px;
+    right: 0;
+    padding: 60px 140px;
+    max-width: 480px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 500ms linear;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1226,7 +1220,7 @@ footer .logo {
 
 @media (min-width: 1200px) {
   .join {
-    align-items: unset;
+    align-items: flex-start;
     margin-bottom: 0;
     margin-right: 90px;
     padding: 0;
@@ -1291,7 +1285,7 @@ b {
 
 @media (min-width: 1200px) {
   .sign {
-    align-items: unset;
+    align-items: flex-start;
     margin: 0;
     width: 570px;
   }
@@ -1319,6 +1313,12 @@ b {
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .contact-input {
+    width: 358px;
+  }
 }
 
 .contact-input:focus {
