@@ -4,6 +4,15 @@
   position: relative;
   outline: none;
 
+  &:focus,
+  &:hover.open-menu-icon {
+    fill: $accent-color;
+  }
+  &:focus,
+  &:hover.close-menu-icon {
+    fill: $accent-color;
+  }
+
   @include for-size(tablet-landscape) {
     display: none;
   }
@@ -21,19 +30,6 @@
 
   .close-menu-icon {
     display: none;
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-      outline: none;
-    }
-  }
-
-  .open-menu-icon {
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-      outline: none;
-    }
   }
 
   .menu-button.is-open .open-menu-icon {

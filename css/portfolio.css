@@ -83,6 +83,14 @@ footer .logo {
   outline: none;
 }
 
+.menu-button:focus, .menu-button:hover.open-menu-icon {
+  fill: #2196f3;
+}
+
+.menu-button:focus, .menu-button:hover.close-menu-icon {
+  fill: #2196f3;
+}
+
 @media (min-width: 768px) {
   .menu-button {
     display: none;
@@ -103,14 +111,6 @@ footer .logo {
   }
   .close-menu-icon {
     display: none;
-  }
-  .close-menu-icon:hover, .close-menu-icon:focus {
-    fill: #2196f3;
-    outline: none;
-  }
-  .open-menu-icon:hover, .open-menu-icon:focus {
-    fill: #2196f3;
-    outline: none;
   }
   .menu-button.is-open .open-menu-icon {
     display: none;
