@@ -63,6 +63,21 @@
   }
 }
 
+.page-header .container {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-menu {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .navigation {
   @include for-size(tablet-landscape) {
     display: flex;
