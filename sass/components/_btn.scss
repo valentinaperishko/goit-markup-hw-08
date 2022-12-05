@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  min-width: 216px;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $primary-white-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $accent-color;
+    background-color: $primary-white-color;
+    outline: none;
+  }
+}
