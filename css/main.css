@@ -457,20 +457,6 @@ address {
   outline: none;
 }
 
-.feature-list {
-  --items: 1;
-}
-@media screen and (min-width: 768px) {
-  .feature-list {
-    --items: 2;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-list {
-    --items: 4;
-  }
-}
-
 .feature-img {
   display: -webkit-box;
   display: -ms-flexbox;
