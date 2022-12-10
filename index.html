@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container-nav">
         <a href="./index.html" class="logo"
           ><span class="logo-blue">Web</span>Studio</a
@@ -54,8 +54,18 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" fill="currentColor">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -69,7 +79,7 @@
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="feature-list card-set">
-            <li class="feature-item card-set-item">
+            <li class="feature-item">
               <div class="feature-img">
                 <svg class="feature-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-feature1"></use>
@@ -81,7 +91,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="feature-item card-set-item">
+            <li class="feature-item">
               <div class="feature-img">
                 <svg class="feature-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-feature2"></use>
@@ -93,7 +103,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="feature-item card-set-item">
+            <li class="feature-item">
               <div class="feature-img">
                 <svg class="feature-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-feature3"></use>
@@ -104,7 +114,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="feature-item card-set-item">
+            <li class="feature-item">
               <div class="feature-img">
                 <svg class="feature-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-feature4"></use>
@@ -124,45 +134,112 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="wedo-list">
             <li class="wedo-item">
-              <img
-                src="./images/wedo1.jpeg"
-                alt="Робота з десктопом"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/wedo/wedo1@1x.webp 1x,
+                    ./images/wedo/wedo1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/wedo/wedo1@1x.jpg 1x,
+                    ./images/wedo/wedo1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/wedo/wedo1@1x.jpg"
+                  alt="Робота з десктопом"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="wedo-overlay-text">Десктопні додатки</p>
             </li>
             <li class="wedo-item">
-              <img
-                src="./images/wedo2.jpeg"
-                alt="Робота з телефоном"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/wedo/wedo2@1x.webp 1x,
+                    ./images/wedo/wedo2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/wedo/wedo2@1x.jpg 1x,
+                    ./images/wedo/wedo2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/wedo/wedo2@1x.jpg"
+                  alt="Робота з десктопом"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="wedo-overlay-text">Мобільні додатки</p>
             </li>
             <li class="wedo-item">
-              <img
-                src="./images/wedo3.jpeg"
-                alt="Робота з планшетом"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/wedo/wedo3@1x.webp 1x,
+                    ./images/wedo/wedo3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/wedo/wedo3@1x.jpg 1x,
+                    ./images/wedo/wedo3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/wedo/wedo3@1x.jpg"
+                  alt="Робота з десктопом"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="wedo-overlay-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="team-section section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list">
+          <ul class="team-list card-set">
             <li class="team-item">
               <img
-                src="./images/teammate1.jpeg"
+                srcset="
+                  ./images/team/img1_270.jpg 270w,
+                  ./images/team/img1_354.jpg 354w,
+                  ./images/team/img1_450.jpg 450w,
+                  ./images/team/img1_540.jpg 540w,
+                  ./images/team/img1_708.jpg 708w,
+                  ./images/team/img1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img1_450.jpg"
                 alt="Член команди"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-info">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
@@ -233,10 +310,20 @@
 
             <li class="team-item">
               <img
-                src="./images/teammate2.jpeg"
+                srcset="
+                  ./images/team/img2_270.jpg 270w,
+                  ./images/team/img2_354.jpg 354w,
+                  ./images/team/img2_450.jpg 450w,
+                  ./images/team/img2_540.jpg 540w,
+                  ./images/team/img2_708.jpg 708w,
+                  ./images/team/img2_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img2_450.jpg"
                 alt="Член команди"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-info">
                 <h3 class="team-title">Ольга Рєпіна</h3>
@@ -305,10 +392,20 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/teammate3.jpeg"
+                srcset="
+                  ./images/team/img3_270.jpg 270w,
+                  ./images/team/img3_354.jpg 354w,
+                  ./images/team/img3_450.jpg 450w,
+                  ./images/team/img3_540.jpg 540w,
+                  ./images/team/img3_708.jpg 708w,
+                  ./images/team/img3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img3_450.jpg"
                 alt="Член команди"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-info">
                 <h3 class="team-title">Микола Тарасов</h3>
@@ -377,10 +474,20 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/teammate4.jpeg"
+                srcset="
+                  ./images/team/img4_270.jpg 270w,
+                  ./images/team/img4_354.jpg 354w,
+                  ./images/team/img4_450.jpg 450w,
+                  ./images/team/img4_540.jpg 540w,
+                  ./images/team/img4_708.jpg 708w,
+                  ./images/team/img4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img4_450.jpg"
                 alt="Член команди"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-info">
                 <h3 class="team-title">Михайло Єрмаков</h3>
@@ -449,11 +556,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="clients-section section">
+      </section>
+      <section class="clients-section section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
-          <ul class="client-list">
+          <ul class="client-list card-set">
             <li class="client-item">
               <a href="/" class="client-link"
                 ><svg class="client-icon">
@@ -498,9 +605,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="address-content">
           <a href="./index.html" class="logo logo-footer"
@@ -675,6 +782,62 @@
         <button class="modal-form-btn btn" type="submit">Відправити</button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="40" height="40" fill="currentColor">
+          <use href="./images/symbol-defs.svg#icon-close-burger-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="/">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contact">
+        <li class="mobile-contact-item">
+          <a href="tel:+380961111111" class="mobile-contact-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contact-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contact-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">Instagram</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">Twitter</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">Facebook</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

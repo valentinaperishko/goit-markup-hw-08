@@ -1,14 +1,14 @@
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * $indent);
-  margin-right: calc(-1 * $indent);
-}
-
 .project-list-item {
-  flex-basis: calc(100% / 3 - $indent);
-  margin-top: $indent;
-  margin-right: $indent;
+  $items: 1;
+  flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  @media screen and (min-width: 768px) {
+    $items: 2;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  }
+  @media screen and (min-width: 1200px) {
+    $items: 3;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  }
 }
 
 .project-list-link {

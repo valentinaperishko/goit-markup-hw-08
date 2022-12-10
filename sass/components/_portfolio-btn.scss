@@ -1,7 +1,7 @@
 .portfolio-btn {
   display: inline-block;
   border: none;
-  padding: 6px 22px;
+  padding: 6px 25px;
   border-radius: 4px;
 
   background-color: $secondary-bcg-color;
@@ -33,11 +33,28 @@
 }
 
 .project-list-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.project-list-filter-item + .project-list-filter-item {
-  margin-left: 8px;
+.project-list-filter-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }

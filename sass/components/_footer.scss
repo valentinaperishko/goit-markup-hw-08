@@ -5,20 +5,37 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 
 .address-content {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .logo-footer {
   color: $primary-white-color;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
 }
 
 address {
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .address-direction {
@@ -41,7 +58,7 @@ address {
 }
 
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .address-link {
@@ -69,10 +86,16 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   color: $primary-white-color;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .footer-social-list {
   display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .footer-social-item + .footer-social-item {
@@ -106,12 +129,21 @@ address {
 }
 
 .footer-form-content {
-  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .footer-input {
   display: inline-block;
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -121,6 +153,10 @@ address {
   outline: 1px solid transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-family: inherit;
@@ -144,13 +180,17 @@ address {
 .btn-input {
   display: inline-flex;
   align-items: center;
-  margin-top: 0;
-  margin-left: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
   min-width: 200px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .btn-input:hover .footer-form-svg,

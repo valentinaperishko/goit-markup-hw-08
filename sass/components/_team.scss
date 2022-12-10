@@ -11,8 +11,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  & + .team-item {
-    margin-left: 30px;
+  $items: 1;
+  flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+
+  @media screen and (min-width: 768px) {
+    $items: 2;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  }
+  @media screen and (min-width: 1200px) {
+    $items: 4;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
   }
 }
 

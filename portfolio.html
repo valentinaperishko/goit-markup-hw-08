@@ -54,6 +54,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" fill="currentColor">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -78,7 +87,7 @@
               <button class="portfolio-btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="project-list">
+          <ul class="project-list card-set">
             <li class="project-list-item">
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
@@ -407,5 +416,60 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="40" height="40" fill="currentColor">
+          <use href="./images/symbol-defs.svg#icon-close-burger-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="/">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contact">
+        <li class="mobile-contact-item">
+          <a href="tel:+380961111111" class="mobile-contact-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contact-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contact-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">Instagram</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">Twitter</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">Facebook</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" class="mobile-social-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
