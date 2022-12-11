@@ -200,7 +200,6 @@ address {
 }
 
 .container {
-  outline: 1px solid red;
   padding: 0 15px;
   margin: 0 auto;
 }
