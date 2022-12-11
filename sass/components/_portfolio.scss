@@ -12,7 +12,9 @@
 }
 
 .project-list-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -31,6 +33,7 @@
 .project-info {
   border: 1px solid #eeeeee;
   padding: 24px 20px;
+  flex-grow: 1;
 }
 .project-list-title {
   margin-bottom: 4px;
@@ -69,7 +72,7 @@
   backdrop-filter: blur(1px);
 
   user-select: none;
-  transform: translateY(100%);
+  transform: translateY(200%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .project-list-link:hover &,

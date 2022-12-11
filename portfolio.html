@@ -64,6 +64,60 @@
           </svg>
         </button>
       </div>
+
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            class="menu-close-icon"
+            width="40"
+            height="40"
+            fill="currentColor"
+          >
+            <use href="./images/symbol-defs.svg#icon-close-burger-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="/">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contact">
+          <li class="mobile-contact-item">
+            <a href="tel:+380961111111" class="mobile-contact-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contact-item">
+            <a href="mailto:info@devstudio.com" class="mobile-contact-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social">
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">Instagram</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">Twitter</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">Facebook</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="section">
@@ -92,9 +146,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-1.jpeg"
-                    alt="Фото проєкту 1"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img1_370.jpg 370w,
+                      ./images/portfolio/img1_354.jpg 354w,
+                      ./images/portfolio/img1_450.jpg 450w,
+                      ./images/portfolio/img1_708.jpg 708w,
+                      ./images/portfolio/img1_740.jpg 740w,
+                      ./images/portfolio/img1_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img1_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -116,9 +180,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-2.jpeg"
-                    alt="Фото проєкту 2"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img2_370.jpg 370w,
+                      ./images/portfolio/img2_354.jpg 354w,
+                      ./images/portfolio/img2_450.jpg 450w,
+                      ./images/portfolio/img2_708.jpg 708w,
+                      ./images/portfolio/img2_740.jpg 740w,
+                      ./images/portfolio/img2_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img2_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -142,9 +216,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-3.jpeg"
-                    alt="Фото проєкту 3"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img3_370.jpg 370w,
+                      ./images/portfolio/img3_354.jpg 354w,
+                      ./images/portfolio/img3_450.jpg 450w,
+                      ./images/portfolio/img3_708.jpg 708w,
+                      ./images/portfolio/img3_740.jpg 740w,
+                      ./images/portfolio/img3_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img3_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -166,9 +250,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-4.jpeg"
-                    alt="Фото проєкту 4"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img4_370.jpg 370w,
+                      ./images/portfolio/img4_354.jpg 354w,
+                      ./images/portfolio/img4_450.jpg 450w,
+                      ./images/portfolio/img4_708.jpg 708w,
+                      ./images/portfolio/img4_740.jpg 740w,
+                      ./images/portfolio/img4_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img4_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -190,9 +284,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-5.jpeg"
-                    alt="Фото проєкту 5"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img5_370.jpg 370w,
+                      ./images/portfolio/img5_354.jpg 354w,
+                      ./images/portfolio/img5_450.jpg 450w,
+                      ./images/portfolio/img5_708.jpg 708w,
+                      ./images/portfolio/img5_740.jpg 740w,
+                      ./images/portfolio/img5_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img5_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -214,9 +318,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-6.jpeg"
-                    alt="Фото проєкту 6"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img6_370.jpg 370w,
+                      ./images/portfolio/img6_354.jpg 354w,
+                      ./images/portfolio/img6_450.jpg 450w,
+                      ./images/portfolio/img6_708.jpg 708w,
+                      ./images/portfolio/img6_740.jpg 740w,
+                      ./images/portfolio/img6_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img6_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -238,9 +352,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-7.jpeg"
-                    alt="Фото проєкту 7"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img7_370.jpg 370w,
+                      ./images/portfolio/img7_354.jpg 354w,
+                      ./images/portfolio/img7_450.jpg 450w,
+                      ./images/portfolio/img7_708.jpg 708w,
+                      ./images/portfolio/img7_740.jpg 740w,
+                      ./images/portfolio/img7_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img7_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -262,9 +386,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-8.jpeg"
-                    alt="Фото проєкту 8"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img8_370.jpg 370w,
+                      ./images/portfolio/img8_354.jpg 354w,
+                      ./images/portfolio/img8_450.jpg 450w,
+                      ./images/portfolio/img8_708.jpg 708w,
+                      ./images/portfolio/img8_740.jpg 740w,
+                      ./images/portfolio/img8_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img8_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -286,9 +420,19 @@
               <a href="/" class="project-list-link">
                 <div class="project-thumb">
                   <img
-                    src="./images/project-9.jpeg"
-                    alt="Фото проєкту 9"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/img9_370.jpg 370w,
+                      ./images/portfolio/img9_354.jpg 354w,
+                      ./images/portfolio/img9_450.jpg 450w,
+                      ./images/portfolio/img9_708.jpg 708w,
+                      ./images/portfolio/img9_740.jpg 740w,
+                      ./images/portfolio/img9_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img9_450.jpg"
+                    alt="Фото проєкту"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="project-list-overlay">
@@ -416,54 +560,6 @@
         </div>
       </div>
     </footer>
-    <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu-close-icon" width="40" height="40" fill="currentColor">
-          <use href="./images/symbol-defs.svg#icon-close-burger-menu"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="./index.html">Студія</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="/">Контакти</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-contact">
-        <li class="mobile-contact-item">
-          <a href="tel:+380961111111" class="mobile-contact-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-contact-item">
-          <a href="mailto:info@devstudio.com" class="mobile-contact-link"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobile-social">
-        <li class="mobile-social-item">
-          <a href="" class="mobile-social-link">Instagram</a>
-        </li>
-        <li class="mobile-social-item">
-          <a href="" class="mobile-social-link">Twitter</a>
-        </li>
-        <li class="mobile-social-item">
-          <a href="" class="mobile-social-link">Facebook</a>
-        </li>
-        <li class="mobile-social-item">
-          <a href="" class="mobile-social-link">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
