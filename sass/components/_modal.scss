@@ -45,13 +45,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: $logo-black-color;
+  fill: $logo-black-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  &:hover .modal-icon,
+  &:focus .modal-icon {
+    fill: $accent-color;
   }
+
   @media screen and (max-width: 557px) {
     top: 26px;
     right: 22px;
