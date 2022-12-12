@@ -1,4 +1,7 @@
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -47,10 +50,6 @@
   color: $accent-color;
 }
 
-.mobile-menu {
-  margin-bottom: auto;
-}
-
 .mobile-menu-link {
   display: block;
   font-weight: 500;
@@ -89,9 +88,15 @@
     color: $accent-color;
   }
 }
+
+.mobile-tel {
+  color: $accent-color;
+}
+
 .mobile-social {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 10px;
   margin-top: 64px;
 }
 
@@ -109,7 +114,6 @@
 
 .mobile-social-item {
   position: relative;
-
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -125,4 +129,8 @@
     background-color: rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
   }
+}
+
+.currentPage-mob {
+  color: $accent-color;
 }
