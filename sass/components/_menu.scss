@@ -34,7 +34,7 @@
 
   margin: 0;
   padding: 0;
-  color: $primary-text-color;
+  fill: $primary-text-color;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -42,9 +42,14 @@
   outline: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  &:hover .burger-icon,
+  &:focus .burger-icon {
+    fill: $accent-color;
+  }
+
+  &:hover .menu-close-icon,
+  &:focus .menu-close-icon {
+    fill: $accent-color;
   }
 
   @media (min-width: 768px) {
