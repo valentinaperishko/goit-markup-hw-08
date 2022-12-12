@@ -109,6 +109,10 @@
 }
 
 .mobile-social-link {
+  @media screen and (max-width: 440px) {
+    font-weight: 400;
+    font-size: 12.5px;
+  }
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -117,25 +121,37 @@
 }
 
 .mobile-social-item + .mobile-social-item {
+  @media screen and (max-width: 440px) {
+    margin-left: 5px;
+  }
   margin-left: 10px;
 }
 
 .mobile-social-item {
   position: relative;
+
   &:not(:last-child) {
+    @media screen and (max-width: 440px) {
+      margin-right: 5px;
+    }
     margin-right: 10px;
   }
 
   &:not(:last-child)::after {
     content: "";
     position: absolute;
-    right: -20px;
-    bottom: 10px;
+    right: -16px;
+    bottom: 8px;
     width: 22px;
     height: 1px;
     border-radius: 1px;
     background-color: rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
+
+    @media screen and (min-width: 441px) {
+      right: -20px;
+      bottom: 10px;
+    }
   }
 }
 
