@@ -949,6 +949,9 @@ address {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -956,19 +959,7 @@ address {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-container {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .address-content {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .address-content {
     margin-right: 70px;
